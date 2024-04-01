@@ -93,7 +93,7 @@ button:hover {
   text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
 }
 
-footer{
+footer a {
   position: fixed; /* Alterado para 'fixed' */
   bottom: 0;
   width: 100%;
