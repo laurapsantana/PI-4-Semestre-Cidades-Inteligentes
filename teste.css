@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+    border-radius: 10px;
+    width: calc(50% - 10px); /* Ajuste para inputs lado a lado */
+}
+
+/* Campos Latitude e Longitude um embaixo do outro */
+.input-box:nth-child(3),
+.input-box:nth-child(4) {
+    width: 100%;
+}
+
+.input-box input {
+    margin: 0.3rem 0;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #ccc; /* Ajuste da borda */
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    width: 100%;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6ef1f1;
+}
+
+.input-box label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #000000c0;
+    margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+    color: #000000be;
+}
+
+.continue-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #2cccc4;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #66edf1f1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: auto;
+        flex-wrap: nowrap;
+        max-height: 20rem; /* Ajuste para melhor usabilidade */
+        padding-right: 1rem;
+    }
+}

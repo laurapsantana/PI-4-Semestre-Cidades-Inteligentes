@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo-projeto.png" type="image/x-icon">
+  
+  <title>Esqueceu sua senha?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .btn-submit {
+      background-color: #1e488f;
+      color: #fff;
+      position: center;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background-color: #0f306b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Esqueceu sua senha?</h2>
+    <p>Por favor, digite o endereço de e-mail associado à sua conta e enviaremos instruções sobre como redefinir sua senha.</p>
+    <form id="forgotPasswordForm">
+      <div class="form-group">
+        <label for="email">Endereço de E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

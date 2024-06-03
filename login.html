@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-projeto.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - BueroTech</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="processa_registro.php" method="POST">
+                <h1>Crie sua conta</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/account/about/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://br.linkedin.com/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu e-mail para cadastro</span>
+                <input type="text" name="nome" placeholder="Digite seu Nome" required>
+                <input type="email" name="email" placeholder="Digite seu Email" required>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+                <button>Inscreva-se</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="processa_login.php" method="POST">
+                <h1>Login - BueroTech</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/account/about/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://br.linkedin.com/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou insira seu email e senha</span>
+                <input type="email" name="usuario" placeholder="Digite seu email" required>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+                <a href="esqueceu-sua-senha.html">Esqueceu sua senha?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem - vindo de Volta!</h1>
+                    <p>Insira seus dados pessoais</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bem - vindo de Volta!</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos os recursos do site</p>
+                    <button class="hidden" id="register">Inscreva-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
